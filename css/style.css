@@ -1,0 +1,184 @@
+:root{
+    --dark:#19283f;
+    --green-c:#33d1cc;
+    --gold-c:#ffc409;
+    --sec-c : #eff7fa;
+    --red-c : #dc3545;
+    --tr : 0.5s;
+}
+/* main header */
+.main-header::after{
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: var(--green-c);
+
+}
+.navbar{
+    background-color: var(--dark);
+}
+.navbar .nav-link{
+    color: #fff !important;
+}
+.navbar .navbar-nav .nav-link.active, 
+.navbar .nav-link:hover{
+    color: var(--green-c) !important;
+}
+.navbar .navbar-toggler{
+    color: #fff !important;
+    border: 1px solid;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .search{
+    color: #fff;
+    border-left: 1px solid;
+    cursor: pointer;
+    color: var(--green-c);
+}
+/* Start Landing */
+.landing{
+    background-color: var(--dark);
+    min-height: calc(100vh - 72px);
+}
+/* End Landing */
+/* Strat Features */
+
+.holder-icon{
+    height: 200px;
+}
+.holder-icon  .num{
+    color: var(--sec-c);
+    font-size: 12rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.holder-icon .icon{
+    color: var(--green-c);
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.features .item h4{
+    color: var(--gold-c);
+}
+/* End Features */
+/* Start Our Work  */
+.our-work{
+    background-color: var(--sec-c);
+}
+.our-work .active{
+    background-color: var(--red-c);
+    color: #fff;
+}
+.our-work ul li {
+    cursor: pointer;
+    transition: var(--tr);
+}
+.our-work ul li:not(.active):hover{
+    color: red;
+}
+.our-work .img-parent{
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+.our-work .img-parent::before{
+    content: "";
+    position: absolute;
+    background: #33d1cccc;
+    width: 0;
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    transition: var(--tr);
+    font-size: 20px;
+}
+.our-work .img-parent:hover::before{
+    width: calc(100% - 10px);
+    content: attr(data-text);
+
+}
+.our-work  .more{
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+/* End Our Work  */
+/* Start Some Stuff */
+.stuff{
+    background-color: #fff;
+}
+.stuff .order-one{
+    width: fit-content;
+}
+/* End Some Stuff */
+/* Start Team Sec */
+.team{
+    background-color: var(--sec-c);
+}
+.team h2{
+    color: var(--gold-c);
+}
+.team .item h5{
+    background-color: var(--green-c);
+    color:#fff;
+    cursor: pointer;
+}
+/* End Team Sec */
+/* Companies Bar not here  */
+/* Start Your Project */
+.your-project{
+    background-color: var(--dark);
+}
+/* End Your Project */
+/* Blog Sec not here  */
+/* Start subscribe sec  */
+.subscribe{
+    background-color: var(--gold-c);
+}
+.subscribe input{
+    border-bottom: 2px solid #fff !important;
+}
+.subscribe input:focus{
+    outline: none;
+}
+.subscribe input::placeholder{
+    color: #fff;
+}
+.subscribe .btn{
+    background-color: #000;
+    color: var(--gold-c);
+}
+/* End subscribe sec  */
+/* Start Footer */
+.footer{
+    background-color: var(--dark);
+}
+
+.footer p>span:first-child{
+    color: var(--green-c);
+}
+.footer p>span:last-child{
+    color: var(--gold-c);
+}
+.footer ul li a{
+    cursor: pointer;
+    transition: var(--tr);
+}
+.footer ul li a:hover{
+    color:var(--gold-c) !important;
+}
+/* End Footer */
